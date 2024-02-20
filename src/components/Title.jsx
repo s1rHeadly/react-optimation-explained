@@ -1,4 +1,4 @@
-
+import { memo } from "react";
 const Title = () => {
 
     console.log("Title Component is rendered");
@@ -7,4 +7,6 @@ const Title = () => {
     );
 }
 
-export default Title
+
+const TitleComponent = memo(Title);
+export default TitleComponent

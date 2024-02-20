@@ -1,5 +1,5 @@
 
-
+import { memo } from "react";
 const Display = ({text, displayvalue}) => {
 
   console.log("Display Component Rendered ", { displayvalue });
@@ -11,4 +11,6 @@ const Display = ({text, displayvalue}) => {
   );
 }
 
-export default Display
+const DiplayComponent = memo(Display);
+
+export default DiplayComponent;

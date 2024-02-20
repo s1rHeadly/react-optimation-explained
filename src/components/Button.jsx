@@ -1,3 +1,4 @@
+import { memo } from "react";
 
 const Button = ({ handleClick, children }) => {
   console.log("Button Component Renders - ", { children });
@@ -7,4 +8,6 @@ const Button = ({ handleClick, children }) => {
   {children}</button>;
 };
 
-export default Button
+
+const ButtonComponent = memo(Button)
+export default ButtonComponent
